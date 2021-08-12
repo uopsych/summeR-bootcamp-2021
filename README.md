@@ -1,5 +1,4 @@
-# summeR-bootcamp-2020
-[![Netlify Status](https://api.netlify.com/api/v1/badges/94262c16-62c1-48d6-9734-48faad39d227/deploy-status)](https://app.netlify.com/sites/uopsych-summer-bootcamp-2020/deploys)
+# summeR-bootcamp-2021
 
 This website contains materials for a 3-day introductory R workshop for the [Department of Psychology](https://psychology.uoregon.edu/) at the University of Oregon. 
 
