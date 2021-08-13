@@ -466,7 +466,7 @@ Conflicts occur when the same name is used for different things.
 
 --
 
-For example, the `dplyr` package and the `stats` package (preloaded) both have a function called `filter()`. 
+For example, the dplyr package and the `stats` package (preloaded) both have a function called `filter()`. 
 
 --
 
@@ -496,7 +496,7 @@ countdown(minutes = 1)
 
 1. Look up for the help documentation for `filter()` from the `stats` package.
 
-1. Now look up the help documentation for `filter()` from the `dplyr` package.
+1. Now look up the help documentation for `filter()` from the dplyr package.
 
 ---
 class: solution

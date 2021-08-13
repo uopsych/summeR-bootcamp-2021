@@ -37,5 +37,5 @@ vec_na <- c(1, 2, 3, 4, 5, 6, NA, 2, 4)
 
 1. Look up for the help documentation for `filter()` from the `stats` package.
 
-2. Now look up the help documentation for `filter()` from the `dplyr` package.
+2. Now look up the help documentation for `filter()` from the dplyr package.
 

@@ -3,7 +3,7 @@
   <head>
     <title>Data visualization with {ggplot2}</title>
     <meta charset="utf-8" />
-    <meta name="author" content="" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
@@ -31,7 +31,7 @@
 
 class: title-slide, center, middle
 
-# Data visualization with `ggplot2`
+# Data visualization with ggplot2
 
 ---
 background-image: url(images/hex/ggplot2.png)
@@ -40,7 +40,7 @@ background-size: 10%
 
 # ggplot
 
-`ggplot2` is a `tidyverse` package for data visualization. It follows the **"grammar of graphics"**
+ggplot2 is a `tidyverse` package for data visualization. It follows the **"grammar of graphics"**
 
 --
 
@@ -95,14 +95,14 @@ glimpse(penguins)
 ```
 ## Rows: 344
 ## Columns: 8
-## $ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adeli…
-## $ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgersen, Torgersen, Torgersen, …
-## $ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, 42.0, 37.8, 37.8, 41.1, 3…
-## $ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, 20.2, 17.1, 17.3, 17.6, 2…
-## $ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186, 180, 182, 191, 198, 185…
-## $ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, 4250, 3300, 3700, 3200, 3…
-## $ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male, NA, NA, NA, NA, female,…
-## $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007,…
+## $ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Ade…
+## $ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgers…
+## $ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1,…
+## $ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1,…
+## $ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 18…
+## $ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475,…
+## $ sex               &lt;fct&gt; male, female, female, NA, female, male, female, mal…
+## $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 200…
 ```
 
 ---
@@ -300,7 +300,7 @@ Verbally, we might describe the code we just wrote as "Start with the `penguins`
 class: inverse
 # Your Turn 1
 
-<div class="countdown" id="timer_5f6c43a5" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_6115d621" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -615,7 +615,7 @@ This is not what we want! `ggplot` is treating the value "red" as if it were par
 class: inverse
 # Your Turn 2
 
-<div class="countdown" id="timer_5f6c4487" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_6115d3f9" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
@@ -908,7 +908,7 @@ penguins %&gt;%
 class: inverse
 # Your Turn 3
 
-<div class="countdown" id="timer_5f6c4444" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_6115d74b" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -948,11 +948,11 @@ glimpse(ps_data)
 ```
 ## Rows: 588
 ## Columns: 5
-## $ subid     &lt;chr&gt; "M22", "M22", "M22", "M22", "T22", "T22", "T22", "T22", "T17", "T17", "T17", "T17", "…
-## $ item      &lt;chr&gt; "faces", "houses", "pasta", "beds", "beds", "faces", "houses", "pasta", "pasta", "fac…
-## $ correct   &lt;int&gt; 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1…
-## $ age       &lt;dbl&gt; 2.00, 2.00, 2.00, 2.00, 2.13, 2.13, 2.13, 2.13, 2.32, 2.32, 2.32, 2.32, 2.38, 2.38, 2…
-## $ condition &lt;chr&gt; "Label", "Label", "Label", "Label", "Label", "Label", "Label", "Label", "Label", "Lab…
+## $ subid     &lt;chr&gt; "M22", "M22", "M22", "M22", "T22", "T22", "T22", "T22", "T1…
+## $ item      &lt;chr&gt; "faces", "houses", "pasta", "beds", "beds", "faces", "house…
+## $ correct   &lt;int&gt; 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1,…
+## $ age       &lt;dbl&gt; 2.00, 2.00, 2.00, 2.00, 2.13, 2.13, 2.13, 2.13, 2.32, 2.32,…
+## $ condition &lt;chr&gt; "Label", "Label", "Label", "Label", "Label", "Label", "Labe…
 ```
 ]
 
@@ -1064,7 +1064,7 @@ Click on the "full screen" icon in the bottom right and use the navigation arrow
 class: inverse, center, middle
 # Q &amp; A
 
-<div class="countdown" id="timer_5f6c4561" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_6115d480" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -1072,7 +1072,8 @@ class: inverse, center, middle
 class: inverse, center, middle
 # Next up...
 
-## Data wrangling with `dplyr`
+## Data wrangling with dplyr
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

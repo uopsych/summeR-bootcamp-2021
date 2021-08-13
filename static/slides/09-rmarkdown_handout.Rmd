@@ -126,7 +126,7 @@ library(broom)
 ```
 ## Graphs
 
-It's really easy to include graphs, like this one. (Using the `mtcars` dataset that comes with `ggplot2`).
+It's really easy to include graphs, like this one. (Using the `mtcars` dataset that comes with ggplot2).
 
 ```{r}
 qplot(hp, mpg, col = factor(cyl), data = mtcars)

@@ -46,7 +46,7 @@ style_mono_accent(base_color = "#23395b",
 
 class: title-slide, center, middle
 
-# Data Wrangling with `dplyr`
+# Data Wrangling with dplyr
 
 ---
 background-image: url(images/hex/tidyverse.png)
@@ -55,7 +55,7 @@ background-size: 10%
 
 # Tidyverse 
 
-There are a few key ideas to be aware of about how the tidyverse works in general before we dive into `dplyr`
+There are a few key ideas to be aware of about how the tidyverse works in general before we dive into dplyr
 
 --
 
@@ -88,7 +88,7 @@ background-size: 10%
 
 # dplyr
 
-`dplyr` is a grammar of data manipulation, providing a consistent set of core verbs that help you solve the most common data manipulation challenges
+dplyr is a grammar of data manipulation, providing a consistent set of core verbs that help you solve the most common data manipulation challenges
 
 --
 ***
@@ -117,7 +117,7 @@ background-size: 10%
 
 
 ---
-# Concept Map: `dplyr`
+# Concept Map: dplyr
 
 ```{r echo=FALSE, out.width="90%"}
 knitr::include_graphics("images/dplyr.png")
@@ -370,7 +370,7 @@ class: inverse
 countdown(minutes = 5)
 ```
 
-1. Import the file `pragmatic_scales_data.csv` (use best practices of a project-oriented workflow). Save it to an object called `ps_data`. This time we'll save it as a `tibble` (which I've done for you).
+1. Import the file `pragmatic_scales_data.csv` (use best practices of a project-oriented workflow). Save it to an object called `ps_data`. This time we'll save it as a tibble (which I've done for you).
 
 1. Filter rows for cases in the "No Label" `condition` and arrange the resulting observations by descending order of `age`.
 
@@ -934,7 +934,7 @@ background-size: 10%
 
 # Column-wise operations
 
-What if we want to apply `dplyr` verbs across multiple columns **simultaneously**? Check out these slides for more `r emo::ji("point_down")`
+What if we want to apply dplyr verbs across multiple columns **simultaneously**? Check out these slides for more `r emo::ji("point_down")`
 
 ```{r echo=FALSE}
 knitr::include_url("https://columnwise-operations-dplyr.netlify.app/")
@@ -954,7 +954,7 @@ countdown(minutes = 5)
 class: inverse, center, middle
 # Next up...
 
-## Data tidying with `tidyr`
+## Data tidying with tidyr
 
 ---
 class: inverse, center, middle

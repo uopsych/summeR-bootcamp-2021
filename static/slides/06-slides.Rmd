@@ -39,7 +39,7 @@ style_mono_accent(base_color = "#23395b",
 
 class: title-slide, center, middle
 
-# Data visualization with `ggplot2`
+# Data visualization with ggplot2
 
 ---
 background-image: url(images/hex/ggplot2.png)
@@ -48,7 +48,7 @@ background-size: 10%
 
 # ggplot
 
-`ggplot2` is a `tidyverse` package for data visualization. It follows the **"grammar of graphics"**
+ggplot2 is a `tidyverse` package for data visualization. It follows the **"grammar of graphics"**
 
 --
 
@@ -1051,5 +1051,5 @@ countdown(minutes = 5)
 class: inverse, center, middle
 # Next up...
 
-## Data wrangling with `dplyr`
+## Data wrangling with dplyr
 

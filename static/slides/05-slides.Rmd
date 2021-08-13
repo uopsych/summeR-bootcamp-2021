@@ -62,7 +62,7 @@ class: title-slide, center, middle
 .pull-left[
 
 .center[
-### `readr`
+### readr
 
 ```{r echo=FALSE, out.width="55%"}
 knitr::include_graphics("images/hex/readr.png")
@@ -97,7 +97,7 @@ knitr::include_graphics("images/hex/rio.png")
 .pull-left[
 
 .center[
-### `readr`
+### readr
 
 ```{r echo=FALSE, out.width="55%"}
 knitr::include_graphics("images/hex/readr.png")
@@ -545,7 +545,7 @@ countdown(minutes = 5)
 class: inverse, center, middle
 # Next up...
 
-## Data visualization with `ggplot2`
+## Data visualization with ggplot2
 
 ---
 class: inverse, center, middle

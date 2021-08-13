@@ -92,13 +92,13 @@ knitr::include_graphics("images/cam.png")
 #### `r icon::fa("calendar")`  **Day 2: Wednesday, 9/23, 9 AM - 12 PM PST**
 + Introduction to the tidyverse
 + Importing data & Project-oriented workflows
-+ Data visualization with `ggplot2`
++ Data visualization with ggplot2
 
 ***
 
 #### `r icon::fa("calendar")`  **Day 3: Friday, 9/25, 9 AM - 1 PM PST**
-+ Data wrangling with `dplyr`
-+ Data tidying with `tidyr`
++ Data wrangling with dplyr
++ Data tidying with tidyr
 + Reproducible reporting with R Markdown
 
 ---
