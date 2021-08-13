@@ -28,10 +28,10 @@ image:
 projects: []
 ---
 
-Hello! Welcome to the 3rd Annual UO Psych R Bootcamp. As we are forced to run the bootcamp online this year due to COVID-19, there are a few things we'd like you to do before we get started to make things run as smoothly as possible. 
+Hello! Welcome to the 4th Annual UO Psych R Bootcamp. There are a few things we'd like you to do before we get started to make things run as smoothly as possible. 
 
 :::clock
-If possible, please try to complete this checklist *before* the first session on Monday 9/21. Thank you!
+If possible, please try to complete this checklist *before* the first Bootcamp session. Thank you!
 :::
 
 
@@ -43,7 +43,7 @@ If possible, please try to complete this checklist *before* the first session on
 
 2) Join the [slack workspace](https://uodatascience.slack.com/). This how we will primarily be communicating with each other, and it is the best place to ask questions outside of bootcamp hours. We'll be using the channel `#bootcamp2021`. You should have received an email invitation to join the `SlackRs` workspace (check your Junk/Spam inbox) -- if you haven't received an invitation, send Brendan an email at [bcullen@uoregon.edu](mailto:bcullen@uoregon.edu). 
 
-3) Join the [RStudio Cloud workspace](https://rstudio.cloud/spaces/94452/join?access_code=E3V8Vd%2FB%2F5edCEBphs4kuttNb6epLuRbqzab2L8J). When you click this link you will be prompted to create a free RStudio Cloud account. Follow the instructions and click "Join space" when prompted. You should find yourself inside a workspace called `UO Psych Bootcamp 2021`. Please don't open any of the materials just yet -- we'll go through these together during the bootcamp. 
+3) Join the [RStudio Cloud workspace](https://rstudio.cloud/spaces/94452/join?access_code=E3V8Vd%2FB%2F5edCEBphs4kuttNb6epLuRbqzab2L8J). When you click this link you will be prompted to create a free RStudio Cloud account. Follow the instructions and click "Join space" when prompted. You should find yourself inside a workspace called **UO Psych Bootcamp 2021**. Please don't open any of the materials just yet -- we'll go through these together during the bootcamp. 
 
 4) Review the [Code of Conduct](/#code_of_conduct).
 
