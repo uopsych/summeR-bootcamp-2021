@@ -16,7 +16,7 @@ social:
   link: https://uodatascience.slack.com/
 - icon: github
   icon_pack: fab
-  link: https://github.com/uopsych/summeR-bootcamp-2020
+  link: https://github.com/uopsych/summeR-bootcamp-2021
 superuser: true
 user_groups:
 - Researchers

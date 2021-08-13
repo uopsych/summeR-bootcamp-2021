@@ -1,8 +1,9 @@
 # summeR-bootcamp-2021
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7392c53a-6114-45d5-939f-fa7f2604936f/deploy-status)](https://app.netlify.com/sites/uopsych-r-bootcamp-2021/deploys)
 
 This website contains materials for a 3-day introductory R workshop for the [Department of Psychology](https://psychology.uoregon.edu/) at the University of Oregon. 
 
-The full website is available here: https://uopsych-r-bootcamp-2020.netlify.app/
+The full website is available here: https://uopsych-r-bootcamp-2021.netlify.app/
 
 # Description
 
@@ -14,15 +15,15 @@ Please contact [Brendan Cullen](https://bcullen.rbind.io/), the bootcamp instruc
 
 Topics covered include:
 
-1. [Basics of R & RStudio](https://uopsych-r-bootcamp-2020.netlify.app/post/01-r-basics/)
-2. [Data Types & Structures](https://uopsych-r-bootcamp-2020.netlify.app/post/02-data-types)
-3. [Functions & Debugging](https://uopsych-r-bootcamp-2020.netlify.app/post/03-functions/)
-4. [Introduction to the Tidyverse](https://uopsych-r-bootcamp-2020.netlify.app/post/04-intro-tidyverse/)
-5. [Importing Data & Project-oriented Workflows](https://uopsych-r-bootcamp-2020.netlify.app/post/05-importing-workflows/)
-6. [Data Visualization with {ggplot2}](https://uopsych-r-bootcamp-2020.netlify.app/post/06-ggplot2/)
-7. [Data Wrangling with {dplyr}](https://uopsych-r-bootcamp-2020.netlify.app/post/07-dplyr/)
-8. [Data Tidying with {tidyr}](https://uopsych-r-bootcamp-2020.netlify.app/post/08-tidyr/)
-9. [Reproducible Reporting with R Markdown](https://uopsych-r-bootcamp-2020.netlify.app/post/09-rmarkdown/)
+1. [Basics of R & RStudio](https://uopsych-r-bootcamp-2021.netlify.app/post/01-r-basics/)
+2. [Data Types & Structures](https://uopsych-r-bootcamp-2021.netlify.app/post/02-data-types)
+3. [Functions & Debugging](https://uopsych-r-bootcamp-2021.netlify.app/post/03-functions/)
+4. [Introduction to the Tidyverse](https://uopsych-r-bootcamp-2021.netlify.app/post/04-intro-tidyverse/)
+5. [Importing Data & Project-oriented Workflows](https://uopsych-r-bootcamp-2021.netlify.app/post/05-importing-workflows/)
+6. [Data Visualization with {ggplot2}](https://uopsych-r-bootcamp-2021.netlify.app/post/06-ggplot2/)
+7. [Data Wrangling with {dplyr}](https://uopsych-r-bootcamp-2021.netlify.app/post/07-dplyr/)
+8. [Data Tidying with {tidyr}](https://uopsych-r-bootcamp-2021.netlify.app/post/08-tidyr/)
+9. [Reproducible Reporting with R Markdown](https://uopsych-r-bootcamp-2021.netlify.app/post/09-rmarkdown/)
 
 # Acknowledgments
 

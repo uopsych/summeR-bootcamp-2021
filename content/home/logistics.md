@@ -24,12 +24,12 @@ subtitle = "All workshop sessions will take place live via Zoom."
   icon = "slack"
   icon_pack = "fab"
   name = "<a href='https://uodatascience.slack.com/'>Slack</a>"
-  description = "For communicating outside of the workshop (use channel #bootcamp2020)"
+  description = "For communicating outside of the workshop (use channel #bootcamp2021)"
   
 [[feature]]
   icon = "github"
   icon_pack = "fab"
-  name = "<a href='https://github.com/uopsych/summeR-bootcamp-2020'>Github repo</a>"
+  name = "<a href='https://github.com/uopsych/summeR-bootcamp-2021'>Github repo</a>"
   description = "For accessing source code of all workshop materials"
 
 +++

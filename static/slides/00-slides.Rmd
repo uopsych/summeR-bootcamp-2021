@@ -46,7 +46,7 @@ class: split-three
 
 # Hello `r emo::ji("wave")`
 
-###  Welcome to the 3rd annual UO Psych R Bootcamp!
+###  Welcome to the 4th annual UO Psych R Bootcamp!
 
 --
 
@@ -116,12 +116,12 @@ class: split-three
 <br><br><br><br><br>
 # [`r fontawesome::fa("slack", height = "120px")`](https://uodatascience.slack.com/)
 
-### Slack <br> **#bootcamp2020**
+### Slack <br> **#bootcamp2021**
 ]]]
 
 .column[.content[.center[
 <br><br><br><br><br>
-# [`r fontawesome::fa("github", height = "120px")`](https://github.com/uopsych/summeR-bootcamp-2020)
+# [`r fontawesome::fa("github", height = "120px")`](https://github.com/uopsych/summeR-bootcamp-2021)
 
 ### Github
 ]]]
@@ -334,4 +334,4 @@ class: inverse, center, middle
 
 ### You can follow along:
 
-### `r emo::ji("link")` [uopsych-r-bootcamp-2020.netlify.app](https://uopsych-r-bootcamp-2020.netlify.app/)
+### `r emo::ji("link")` [uopsych-r-bootcamp-2021.netlify.app](https://uopsych-r-bootcamp-2021.netlify.app/)
