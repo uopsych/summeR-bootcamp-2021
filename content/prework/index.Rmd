@@ -31,7 +31,7 @@ projects: []
 Hello! Welcome to the 4th Annual UO Psych R Bootcamp. There are a few things we'd like you to do before we get started to make things run as smoothly as possible. 
 
 :::clock
-If possible, please try to complete this checklist *before* the first Bootcamp session. Thank you!
+If possible, please try to complete this checklist *before* the first bootcamp session. Thank you!
 :::
 
 
