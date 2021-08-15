@@ -182,5 +182,5 @@ countdown(minutes = 5)
 class: inverse, center, middle
 # That's a wrap!
 
-## Be sure to check out the [Resources page](https://uopsych-r-bootcamp-2021.netlify.app/resources/) `r emo::ji("light_bulb")`
+## Be sure to check out the <br>[Resources page](https://uopsych-r-bootcamp-2021.netlify.app/resources/)
 
