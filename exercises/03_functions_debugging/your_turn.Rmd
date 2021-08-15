@@ -23,9 +23,9 @@ vec_na <- c(1, 2, 3, 4, 5, 6, NA, 2, 4)
 
 1. In your RStudio console, look up the help documentation for`import()` by typing `?import`. What do you see?
 
-2. Run `search()` in the console. Is the `rio` package included in this list?
+2. Run `search()` in the console. Is the rio package included in this list?
  
-3. Again in the console, load the `rio` package using the `library()` function. 
+3. Again in the console, load the rio package using the `library()` function. 
 
 4. Now look again at the help documentation for `import()`. What do you see this time?
 
