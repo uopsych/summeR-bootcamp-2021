@@ -1,7 +1,8 @@
 ---
 title: Welcome
 author: ''
-date: '2020-09-11'
+date: "`r Sys.Date()`"
+weight: 1
 slug: []
 categories: []
 tags: []

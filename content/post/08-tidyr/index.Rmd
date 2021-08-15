@@ -7,8 +7,8 @@ summary: " "
 authors: []
 tags: []
 categories: []
-date: 2020-09-15T12:23:14-07:00
-lastmod: 2020-09-15T12:23:14-07:00
+date: "`r Sys.Date()`"
+weight: 9
 featured: false
 draft: false
 

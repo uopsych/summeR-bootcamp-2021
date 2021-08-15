@@ -1,14 +1,14 @@
 ---
 title: Basics of R & RStudio
 author: ''
-date: '2020-09-14'
+date: "`r Sys.Date()`"
+weight: 2
 slug: []
 categories: []
 tags: []
 subtitle: ''
 summary: ' '
 authors: []
-lastmod: '2020-09-15T15:02:15-07:00'
 featured: no
 image:
   caption: "Artwork by [@allison_horst](https://twitter.com/allison_horst)"
