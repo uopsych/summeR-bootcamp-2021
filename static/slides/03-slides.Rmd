@@ -333,9 +333,9 @@ The most common way to get a package is to download it from CRAN using `install.
 --
 ***
 
-For example, one package we're going to use tomorrow is `rio`, which has really easy functions for importing and exporting data. 
+For example, one package we're going to use tomorrow is rio, which has really easy functions for importing and exporting data. 
 
-If we wanted to install the `rio` package, we would use 
+If we wanted to install the rio package, we would use 
 
 ```{r eval=FALSE}
 install.packages("rio")
@@ -387,9 +387,9 @@ countdown(minutes = 3)
 
 1. In your RStudio console, look up the help documentation for`import()` by typing `?import`. What do you see?
 
-1. Run `search()` in the console. Is the `rio` package included in this list?
+1. Run `search()` in the console. Is the rio package included in this list?
  
-1. Again in the console, load the `rio` package using the `library()` function. 
+1. Again in the console, load the rio package using the `library()` function. 
 
 1. Now look again at the help documentation for `import()`. What do you see this time?
 
@@ -445,14 +445,14 @@ knitr::include_graphics("images/package_yt_5.png")
 ---
 # Packages
 
-Another package we're going to use a lot going forward is `tidyverse`. 
+Another package we're going to use a lot going forward is tidyverse. 
 
-`tidyverse` is actually a "meta-package", meaning it contains many individual packages inside of it that are all bundled together. 
+tidyverse is actually a "meta-package", meaning it contains many individual packages inside of it that are all bundled together. 
 
 --
 ***
 
-When we load `tidyverse` we get quite a bit of info. 
+When we load tidyverse we get quite a bit of info. 
 
 <br>
 ```{r echo=FALSE}
@@ -466,7 +466,7 @@ Conflicts occur when the same name is used for different things.
 
 --
 
-For example, the dplyr package and the `stats` package (preloaded) both have a function called `filter()`. 
+For example, the dplyr package and the stats package (preloaded) both have a function called `filter()`. 
 
 --
 
@@ -494,7 +494,7 @@ class: inverse
 countdown(minutes = 1)
 ```
 
-1. Look up for the help documentation for `filter()` from the `stats` package.
+1. Look up for the help documentation for `filter()` from the stats package.
 
 1. Now look up the help documentation for `filter()` from the dplyr package.
 

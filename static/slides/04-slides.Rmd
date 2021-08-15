@@ -41,7 +41,7 @@ class: title-slide, center, middle
 ---
 # Tidyverse
 
-The `tidyverse` is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
+The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
 
 --
 ***

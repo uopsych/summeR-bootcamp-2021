@@ -48,7 +48,7 @@ background-size: 10%
 
 # ggplot
 
-ggplot2 is a `tidyverse` package for data visualization. It follows the **"grammar of graphics"**
+ggplot2 is a tidyverse package for data visualization. It follows the **"grammar of graphics"**
 
 --
 

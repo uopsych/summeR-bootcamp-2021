@@ -77,7 +77,7 @@ knitr::include_graphics("images/hex/readr.png")
 .pull-right[
 
 .center[
-### `rio`
+### rio
 
 ```{r echo=FALSE, out.width="55%"}
 knitr::include_graphics("images/hex/rio.png")
@@ -111,7 +111,7 @@ knitr::include_graphics("images/hex/readr.png")
 .pull-right[
 
 .center[
-### `rio`
+### rio
 
 ```{r echo=FALSE, out.width="55%"}
 knitr::include_graphics("images/hex/rio.png")
@@ -233,7 +233,7 @@ knitr::include_graphics("images/example_rproj.png")
 --
 
 .pull-left[
-In combination with RStudio Projects, use the `here` package
+In combination with RStudio Projects, use the here package
 
 `here::here()` will build a file path to the top level of your project directory. 
 
@@ -256,7 +256,7 @@ countdown(minutes = 4)
 ```
 
 
-#### 1. Load the `rio` and `here` packages.
+#### 1. Load the rio and here packages.
 
 #### 2.  Run the following code to import the data called `pragmatic_scales_data.csv`. Why do you get an error? Where is this file saved? *Hint*: Look through the folder(s) in the Files pane
 
@@ -266,7 +266,7 @@ ps_data <- import("pragmatic_scales_data.csv")
 
 #### 3. Fix the error in the code above to import the data. *Hint*: use the `here()` function    
 
-#### 4. Remember that `rio` is flexible with file types -- `rio::import()` will call the right function under the hood to read in the file based on the file extension. Use `rio` to import `pragmatic_scales_data.sav` (an SPSS file type) and save it to a new object named `ps_data_2`.
+#### 4. Remember that rio is flexible with file types -- `rio::import()` will call the right function under the hood to read in the file based on the file extension. Use rio to import `pragmatic_scales_data.sav` (an SPSS file type) and save it to a new object named `ps_data_2`.
 
 ---
 class: solution
@@ -313,7 +313,7 @@ ps_data_2 <- import(here("data/pragmatic_scales_data.sav"))
 ---
 # Exporting data
 
-You can also use `rio` to export your data using `export()`, saving it in any of the formats that it works with. 
+You can also use rio to export your data using `export()`, saving it in any of the formats that it works with. 
 
 --
 ***
@@ -490,7 +490,7 @@ countdown(minutes = 2)
 
 1. Take a look at `another_df`, which should be saved in your Global Environment. Click the "View" button in the Environment pane, and also use `View()` in your Console. 
 
-1. Now look at some summary information about `another_df` using `str()` and `glimpse()`. *Hint*. You will need to load the `tidyverse` package first in order to use `glimpse()`.
+1. Now look at some summary information about `another_df` using `str()` and `glimpse()`. *Hint*. You will need to load the tidyverse package first in order to use `glimpse()`.
 
 1. Lastly find the number of rows and columns in `another_df` using `nrow()` and `ncol()`, respectively. Make sure your answers match the summary information given to you above. 
 
