@@ -20,9 +20,9 @@ Topics covered include:
 3. [Functions & Debugging](https://uopsych-r-bootcamp-2021.netlify.app/post/03-functions/)
 4. [Introduction to the Tidyverse](https://uopsych-r-bootcamp-2021.netlify.app/post/04-intro-tidyverse/)
 5. [Importing Data & Project-oriented Workflows](https://uopsych-r-bootcamp-2021.netlify.app/post/05-importing-workflows/)
-6. [Data Visualization with {ggplot2}](https://uopsych-r-bootcamp-2021.netlify.app/post/06-ggplot2/)
-7. [Data Wrangling with {dplyr}](https://uopsych-r-bootcamp-2021.netlify.app/post/07-dplyr/)
-8. [Data Tidying with {tidyr}](https://uopsych-r-bootcamp-2021.netlify.app/post/08-tidyr/)
+6. [Data Visualization with ggplot2](https://uopsych-r-bootcamp-2021.netlify.app/post/06-ggplot2/)
+7. [Data Wrangling with dplyr](https://uopsych-r-bootcamp-2021.netlify.app/post/07-dplyr/)
+8. [Data Tidying with tidyr](https://uopsych-r-bootcamp-2021.netlify.app/post/08-tidyr/)
 9. [Reproducible Reporting with R Markdown](https://uopsych-r-bootcamp-2021.netlify.app/post/09-rmarkdown/)
 
 # Acknowledgments
