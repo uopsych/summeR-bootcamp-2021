@@ -81,48 +81,19 @@ You can use `typeof()` to find out the type of a value or object
 typeof(1)
 ```
 
---
 
 ```{r}
 typeof(TRUE)
 ```
 
---
 
 ```{r}
 typeof(1L)
 ```
 
---
 
 ```{r}
 typeof("one")
-```
-
-
----
-# Types of data 
-
-```{r}
-typeof(NA)
-```
-
---
-
-```{r}
-typeof(NA_character_)
-```
-
---
-
-```{r}
-typeof(NULL)
-```
-
---
-
-```{r}
-typeof(Inf)
 ```
 
 ---
@@ -207,23 +178,13 @@ seq()
 --
 ***
 
-.panelset[
-
-.panel[.panel-name[Question]
-Why did this happen?
-]
-
-.panel[.panel-name[Answer]
-
 The `seq()` function has **arguments** with default values. 
 
 The first two arguments are `from` and `to`, which specify the starting and end values of the sequence. By *default* `from = 1` and `to = 1`. 
 
 This means that typing `seq()` is equivalent to typing `seq(from = 1, to = 1)`, which generates a sequence with just one value: `1`.
 
-We will talk more about how functions work in the next slide deck!
-]
-]
+We will talk more about how functions work in the next slide deck.
 
 ---
 # Vectors
@@ -332,6 +293,7 @@ x <- 8
 ```{r}
 # Q2.
 y <- seq(from = 2, to = 16, by = 2)
+y
 ```
 ]
 
@@ -453,14 +415,15 @@ z[c(1, 3)]
 
 ### Negative indexing
 
+```{r}
+z
+```
+
+***
+
 We could also say which elements *not* to give us using the minus sign (`-`). 
 
 --
-***
-
-```{r}
-z <- 6:10
-```
 
 .panelset[
 .panel[.panel-name[Example 1]
@@ -512,7 +475,6 @@ z
 z
 ```
 
---
 ***
 
 Now we can use the names of the elements in `z` for subsetting, using quotes
@@ -524,55 +486,14 @@ z["first"]
 ---
 # Modifying Vectors 
 
-One thing that you can do with indexing is change elements within a vector. 
+You can use indexing to change elements within a vector. 
 
---
-***
-
-.panelset[
-.panel[.panel-name[Example 1]
-
-We could change the first element of `z` to missing, or `NA`.
+For example, we could change the first element of `z` to missing, or `NA`.
 
 ```{r}
 z[1] <- NA
 z
 ```
-]
-
-.panel[.panel-name[Example 2]
-
-You can also use indexing to transform a single element in a vector. 
-
-Let's raise the second element of `z` to the power of 2.
-
-```{r}
-z[2] <- z[2]^2
-z
-```
-]
-
-.panel[.panel-name[Example 3]
-
-Or use it to add elements to a vector. 
-
-Let's add the number 11 as the sixth element of the vector `z`.
-
-```{r}
-z[6] <- 11
-z
-```
-]
-
-.panel[.panel-name[Example 4]
-And you can add a name for that element by referencing the index for the `names` attribute of `z`.
-
-```{r}
-names(z)[6] <- "sixth"
-z
-```
-]
-]
 
 ---
 class: inverse
@@ -934,15 +855,13 @@ df_1
 ---
 # Indexing data frames
 
-```{r echo=FALSE}
+```{r}
 df_1
 ```
 
 ***
 
-Indexing data frames is similar to how we index vectors, except we have two dimensions, which we use like so:
-
-.center[`[row, column]`]
+Indexing data frames is similar to how we index vectors, except we have two dimensions, which we use like so: `[row, column]`
 
 --
 ***
@@ -981,7 +900,7 @@ df_1[, "c2"]
 ---
 # Indexing data frames
 
-```{r echo=FALSE}
+```{r}
 df_1
 ```
 
@@ -1006,10 +925,8 @@ df_1$c1
 
 We can also index a column using vector indexing, since a single column is just a 1-dimensional vector. 
 
-Let's get the first value in column 1.
-
 ```{r}
-df_1$c1[1]
+df_1$c1[1] # get the first value in column 1
 ```
 ]
 ]
@@ -1018,7 +935,7 @@ df_1$c1[1]
 # Modifying data frames 
 
 
-```{r echo=FALSE}
+```{r}
 df_1
 ```
 
@@ -1054,37 +971,17 @@ df_1
 ]
 
 ---
-# Data types & Coercion
+# Inspecting data frames
 
-```{r echo=FALSE}
+```{r}
 df_1
 ```
 
 ***
 
-How can we tell what type of data each column in our data frame stores? 
-
---
-
-We can use the `str()` function to get the structure of the data.
+We can use the `str()` function to get the structure of the data. This tells us the type of each column.
 
 ```{r}
-str(df_1)
-```
-
----
-# Data types & Coercion
-
-We can also coerce individual columns into other types. 
-
---
-***
-
-For example, we could convert column `c1` into an integer (from a numeric/double)
-
-```{r}
-df_1$c1 <- as.integer(df_1$c1)
-
 str(df_1)
 ```
 
@@ -1097,15 +994,15 @@ class: inverse
 countdown(minutes = 3)
 ```
 
-1. Make a data frame, called `df_2`, that has 3 columns as shown below. After you create it, check the structure.
+1. Make a data frame, called `df_2`, that has 3 columns as shown below. After you create it, check the structure with `str()`.
 
-    `c1` = c(1, 2, 3) <br>
-    `c2` = c(2, 4, 6) <br>
-    `c3` = c("a", "b", "c")
+```{r echo = FALSE}
+data.frame(c1 = c(1, 2, 3),
+           c2 = c(2, 4, 6),
+           c3 = c("a", "b", "c"))
+```
 
-1. Add a fourth column, `c4`, which is the first and second columns multiplied together.
-
-1. Try to add the first and second rows together. What happens? Why?
+2. Add a fourth column, `c4`, which is the first and second columns multiplied together.
 
 ---
 class: solution
@@ -1132,14 +1029,6 @@ str(df_2)
 df_2$c4 <- df_2$c1 * df_2$c2
 
 df_2
-```
-]
-
-.panel[.panel-name[Q3]
-
-```{r}
-# Q3.
-df_2[1,] + df_2[2, ]
 ```
 ]
 ]
