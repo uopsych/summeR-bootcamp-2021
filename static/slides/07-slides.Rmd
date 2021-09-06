@@ -46,7 +46,7 @@ style_mono_accent(base_color = "#23395b",
 
 class: title-slide, center, middle
 
-# Data Wrangling with `dplyr`
+# Data Wrangling with dplyr
 
 ---
 background-image: url(images/hex/tidyverse.png)
@@ -55,7 +55,7 @@ background-size: 10%
 
 # Tidyverse 
 
-There are a few key ideas to be aware of about how the tidyverse works in general before we dive into `dplyr`
+There are a few key ideas to be aware of about how the tidyverse works in general before we dive into dplyr
 
 --
 
@@ -88,7 +88,7 @@ background-size: 10%
 
 # dplyr
 
-`dplyr` is a grammar of data manipulation, providing a consistent set of core verbs that help you solve the most common data manipulation challenges
+dplyr is a grammar of data manipulation, providing a consistent set of core verbs that help you solve the most common data manipulation challenges
 
 --
 ***
@@ -117,7 +117,7 @@ background-size: 10%
 
 
 ---
-# Concept Map: `dplyr`
+# dplyr
 
 ```{r echo=FALSE, out.width="90%"}
 knitr::include_graphics("images/dplyr.png")
@@ -167,7 +167,7 @@ background-image: url(images/hex/magrittr.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Concept Map: `%>%`
+# `%>%`
 
 ```{r echo=FALSE, out.width="90%"}
 knitr::include_graphics("images/pipe-operator.png")
@@ -298,7 +298,7 @@ background-image: url(images/hex/dplyr.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Concept Map: `filter()`
+# `filter()`
 
 ```{r echo=FALSE, out.width="90%"}
 knitr::include_graphics("images/filter.png")
@@ -370,7 +370,7 @@ class: inverse
 countdown(minutes = 5)
 ```
 
-1. Import the file `pragmatic_scales_data.csv` (use best practices of a project-oriented workflow). Save it to an object called `ps_data`. This time we'll save it as a `tibble` (which I've done for you).
+1. Import the file `pragmatic_scales_data.csv` (use best practices of a project-oriented workflow). Save it to an object called `ps_data`. This time we'll save it as a tibble (which I've done for you).
 
 1. Filter rows for cases in the "No Label" `condition` and arrange the resulting observations by descending order of `age`.
 
@@ -551,7 +551,7 @@ background-image: url(images/hex/dplyr.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Concept Map: `select()`
+# `select()`
 
 ```{r echo=FALSE, out.width="90%"}
 knitr::include_graphics("images/select.png")
@@ -640,7 +640,7 @@ background-image: url(images/hex/dplyr.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Concept Map: `mutate()`
+# `mutate()`
 
 ```{r echo=FALSE, out.width="90%"}
 knitr::include_graphics("images/mutate.png")
@@ -844,7 +844,7 @@ background-image: url(images/hex/dplyr.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Concept Map: `summarize()`
+# `summarize()`
 
 ```{r echo=FALSE, out.width="90%"}
 knitr::include_graphics("images/group_by-summarize.png")
@@ -932,15 +932,15 @@ background-image: url(images/hex/dplyr.png)
 background-position: 90% 5%
 background-size: 10%
 
-# Column-wise operations
+# Deeper dive
 
-What if we want to apply `dplyr` verbs across multiple columns **simultaneously**? Check out these slides for more `r emo::ji("point_down")`
+What if we want to apply dplyr verbs across multiple columns and rows **simultaneously**?
 
 ```{r echo=FALSE}
-knitr::include_url("https://columnwise-operations-dplyr.netlify.app/")
+knitr::include_url("https://dplyr-wisely.netlify.app/")
 ```
 
-.footnote[`r emo::ji("link")` [columnwise-operations-dplyr.netlify.app](https://columnwise-operations-dplyr.netlify.app/#1)]
+.footnote[`r emo::ji("link")` [dplyr-wisely.netlify.app](https://dplyr-wisely.netlify.app/)]
 
 ---
 class: inverse, center, middle
@@ -954,7 +954,7 @@ countdown(minutes = 5)
 class: inverse, center, middle
 # Next up...
 
-## Data tidying with `tidyr`
+## Data tidying with tidyr
 
 ---
 class: inverse, center, middle

@@ -23,11 +23,11 @@ user_groups:
 - Visitors
 ---
 
-# UO Psych R Bootcamp
+# UO Psych R Bootcamp 2021
 
 <br>
 
-Welcome to the 3rd annual R Bootcamp hosted by the [Department of Psychology](https://psychology.uoregon.edu/) at the University of Oregon. If you have any questions or concerns, please contact [Brendan Cullen](https://bcullen.rbind.io/) at [bcullen@uoregon.edu](mailto:bcullen@uoregon.edu).
+Welcome to the 4th annual R Bootcamp hosted by the [Department of Psychology](https://psychology.uoregon.edu/) at the University of Oregon. If you have any questions or concerns, please contact [Brendan Cullen](https://bcullen.rbind.io/), the bootcamp coordinator, at [bcullen@uoregon.edu](mailto:bcullen@uoregon.edu).
 
 This website contains all of the details and materials for the bootcamp, along with resources for further learning and practice. The materials shared here are free and open source and may be shared and adpated under the [Creative Commons License](https://creativecommons.org/licenses/by/4.0/). 
 

@@ -11,7 +11,7 @@ library(rio)
 
 # Your Turn 1
 
-1. Import the file `pragmatic_scales_data.csv` (use best practices of a project-oriented workflow). Save it to an object called `ps_data`. This time we'll save it as a `tibble` (which I've done for you).
+1. Import the file `pragmatic_scales_data.csv` (use best practices of a project-oriented workflow). Save it to an object called `ps_data`. This time we'll save it as a tibble (which I've done for you).
 
 ```{r}
 # Q1. 

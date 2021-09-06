@@ -1,14 +1,14 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Data Tidying with {tidyr}"
+title: "Data Tidying with tidyr"
 subtitle: ""
 summary: " "
 authors: []
 tags: []
 categories: []
-date: 2020-09-15T12:23:14-07:00
-lastmod: 2020-09-15T12:23:14-07:00
+date: "`r Sys.Date()`"
+weight: 9
 featured: false
 draft: false
 
@@ -49,7 +49,7 @@ links:
   url: https://rstudio.cloud/learn/primers/4.2
 ---
 
-The concept of tidy data is, as the name suggests, of primary importance in the tidyverse. This lesson will introduce you to the criteria of tidy data, why it's important, and how to reshape your raw data into a tidy format using the functions `pivot_wider()` and `pivot_longer()`, which are the more user-friendly and intuitive successors to the widely despised `spread()` and `gather()`. 
+The concept of tidy data is, as the name suggests, of primary importance in the tidyverse. This lesson will introduce you to the criteria of tidy data, why it's important, and how to reshape your raw data into a tidy format using `pivot_wider()` and `pivot_longer()`.
 
 ***
 
@@ -71,6 +71,4 @@ xaringanExtra::embed_xaringan(
 
 2. Tutorial on [reshaping data](https://rladiessydney.org/courses/ryouwithme/02-cleanitup-5/) from R-Ladies
 Sydney
-
-3. The [best scene](https://www.youtube.com/watch?v=n67RYI_0sc0) from all 10 seasons of FRIENDS
 :::

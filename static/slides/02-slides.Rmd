@@ -81,48 +81,19 @@ You can use `typeof()` to find out the type of a value or object
 typeof(1)
 ```
 
---
 
 ```{r}
 typeof(TRUE)
 ```
 
---
 
 ```{r}
 typeof(1L)
 ```
 
---
 
 ```{r}
 typeof("one")
-```
-
-
----
-# Types of data 
-
-```{r}
-typeof(NA)
-```
-
---
-
-```{r}
-typeof(NA_character_)
-```
-
---
-
-```{r}
-typeof(NULL)
-```
-
---
-
-```{r}
-typeof(Inf)
 ```
 
 ---
@@ -207,23 +178,13 @@ seq()
 --
 ***
 
-.panelset[
-
-.panel[.panel-name[Question]
-Why did this happen?
-]
-
-.panel[.panel-name[Answer]
-
 The `seq()` function has **arguments** with default values. 
 
 The first two arguments are `from` and `to`, which specify the starting and end values of the sequence. By *default* `from = 1` and `to = 1`. 
 
 This means that typing `seq()` is equivalent to typing `seq(from = 1, to = 1)`, which generates a sequence with just one value: `1`.
 
-We will talk more about how functions work in the next slide deck!
-]
-]
+We will talk more about how functions work in the next slide deck.
 
 ---
 # Vectors
@@ -332,6 +293,7 @@ x <- 8
 ```{r}
 # Q2.
 y <- seq(from = 2, to = 16, by = 2)
+y
 ```
 ]
 
@@ -453,14 +415,15 @@ z[c(1, 3)]
 
 ### Negative indexing
 
+```{r}
+z
+```
+
+***
+
 We could also say which elements *not* to give us using the minus sign (`-`). 
 
 --
-***
-
-```{r}
-z <- 6:10
-```
 
 .panelset[
 .panel[.panel-name[Example 1]
@@ -512,7 +475,6 @@ z
 z
 ```
 
---
 ***
 
 Now we can use the names of the elements in `z` for subsetting, using quotes
@@ -524,55 +486,14 @@ z["first"]
 ---
 # Modifying Vectors 
 
-One thing that you can do with indexing is change elements within a vector. 
+You can use indexing to change elements within a vector. 
 
---
-***
-
-.panelset[
-.panel[.panel-name[Example 1]
-
-We could change the first element of `z` to missing, or `NA`.
+For example, we could change the first element of `z` to missing, or `NA`.
 
 ```{r}
 z[1] <- NA
 z
 ```
-]
-
-.panel[.panel-name[Example 2]
-
-You can also use indexing to transform a single element in a vector. 
-
-Let's raise the second element of `z` to the power of 2.
-
-```{r}
-z[2] <- z[2]^2
-z
-```
-]
-
-.panel[.panel-name[Example 3]
-
-Or use it to add elements to a vector. 
-
-Let's add the number 11 as the sixth element of the vector `z`.
-
-```{r}
-z[6] <- 11
-z
-```
-]
-
-.panel[.panel-name[Example 4]
-And you can add a name for that element by referencing the index for the `names` attribute of `z`.
-
-```{r}
-names(z)[6] <- "sixth"
-z
-```
-]
-]
 
 ---
 class: inverse
@@ -644,15 +565,23 @@ Vectors are great for storing a single type of data, but what if we have a varie
 --
 ***
 
-For example, let's say I want to store the year I am in the PhD program (a number), my name ( a string), and my enrollment status (a logical) in a single object that preserves these different types... `r emo::ji("thinking")`
+For example, let's say I have some information about Jane Doe that I want to store together in a single object:
+
+- her name ("Jane Doe") -- a **string**
+- her height in feet (5.5) -- a **number**
+- whether or not she is right-handed (TRUE) -- a **logical**
 
 --
 
-A vector won't work, but a **list** will.
+A vector won't work -- every element is coerced to a character (notice the quotes).
+
+```{r}
+c("Jane Doe", 5.5, TRUE)
+```
 
 --
 
-Lists are like vectors in that they are a 1-dimensional object, but they can contain heterogeneous data. 
+Instead, we can put them in a **list**. Lists are very flexible -- they can contain different types of data and preserve those types.
 
 ---
 # Creating Lists
@@ -662,9 +591,9 @@ We can create a list with the `list()` function
 --
 
 ```{r}
-brendan <- list(4L, "Brendan Cullen", TRUE)
+jane_doe <- list("Jane Doe", 5.5, TRUE)
 
-brendan
+jane_doe
 ```
 
 ---
@@ -673,17 +602,17 @@ brendan
 And, we can give each element of the list a name to make it easier to keep track of them.
 
 ```{r}
-brendan <- list(year = 4L,
-                name = "Brendan Cullen",
-                enrollment = TRUE)
+jane_doe <- list(name = "Jane Doe",
+                height = 5.5,
+                right_handed = TRUE)
 
-brendan
+jane_doe
 ```
 
 --
 ***
 
-Notice that `[[1]]`, `[[2]]`, and `[[3]]`, the element indices, have been replaced by the names `year`, `name`, and `enrollment` `r emo::ji("eyes")`
+Notice that `[[1]]`, `[[2]]`, and `[[3]]`, the element indices, have been replaced by the names `name`, `height` and `right_handed` `r emo::ji("eyes")`
 
 ---
 # Creating Lists
@@ -693,7 +622,7 @@ You can see also see the names of a list by running `names()` on it
 --
 
 ```{r}
-names(brendan)
+names(jane_doe)
 ```
 
 --
@@ -704,16 +633,16 @@ Lists are even more flexible than we've seen so far. In addition to being of het
 ---
 # Creating Lists
 
-Let's add another element to the list about me that contains my favorite types of data, which will be a vector of length 2.
+Let's add another element to the list about Jane that contains her favorite types of ice cream (she can't choose just one!)
 
-Notice use of `c()` to create the element `fave_data` `r emo::ji("eyes")`
+Notice use of `c()` to create the element `ice_cream` `r emo::ji("eyes")`
 
 ```{r}
-brendan <- list(year = 4L,
-                name = "Brendan Cullen",
-                enrollment = TRUE, 
-                fave_data = c("strings", "numbers"))
-brendan
+jane_doe <- list(name = "Jane Doe",
+                height = 5.5,
+                right_handed = TRUE,
+                ice_cream = c("mint chip", "pistachio"))
+jane_doe
 ```
 
 ---
@@ -728,25 +657,25 @@ Like vectors, lists can be indexed by their name or their position (numerically)
 .panelset[
 .panel[.panel-name[Example 1]
 
-For example, if we wanted the `year` element, we could get it out using its position as the first element of my list:
+For example, if we wanted the `height` element, we could get it out using its position as the second element of the list:
 
 ```{r}
-brendan[1]
+jane_doe[2]
 ```
 ]
 
 .panel[.panel-name[Example 2]
 
-Now let's say we want to know my PhD year in dog years. Let's see if we can get that by multiplying the `year` element by 7.
+Now let's say we want to know Jane's height in *inches*. Let's see if we can get that by multiplying the `height` element by 12.
 
 ```{r error=TRUE}
-brendan[1] * 7
+jane_doe[2] * 12
 ```
 
 ***
-R is telling us that we supplied a non-numeric argument, i.e. `brendan[1]`. 
+R is telling us that we supplied a non-numeric argument, i.e. `jane_doe[2]`. 
 
-This happened because single bracket indexing on a list returns a list -- but what we need is the *content* of the list.
+This happened because single bracket indexing on a list returns a list -- but what we need is the *contents* of the list (in this case, just the number `5.5`).
 ]
 
 .panel[.panel-name[Example 3]
@@ -754,21 +683,21 @@ This happened because single bracket indexing on a list returns a list -- but wh
 If we want the actual object stored at the first position instead of a list containing that object, we have to use double-bracket indexing `list[[i]]`:
 
 ```{r}
-brendan[[1]] 
+jane_doe[[2]] 
 ```
 
 ***
-Notice it no longer has the `$year`. 
+Notice it no longer has the `$height`. 
 
 In general, a `$label` is a hint that you're looking at a list (the container) and not just the object stored at that position (the contents). 
 
 ]
 
 .panel[.panel-name[Example 4]
-Now let's see my PhD year in dog years.
+Now let's see Jane's height in inches.
 
 ```{r}
-brendan[[1]] * 7
+jane_doe[[2]] * 12
 ```
 ]
 ]
@@ -784,7 +713,7 @@ brendan[[1]] * 7
 The same applies to name indexing. With lists, you can get a list containing the indexed object with single brackets `[]`.
 
 ```{r}
-brendan["year"]
+jane_doe["height"]
 ```
 ]
 
@@ -793,7 +722,7 @@ brendan["year"]
 And double brackets `[[]]` can be used to get the *contents* -- the  object stored with that name.
 
 ```{r}
-brendan[["year"]]
+jane_doe[["height"]]
 ```
 ]
 
@@ -802,7 +731,7 @@ brendan[["year"]]
 You can also use `list$name` to get the object stored with a particular name too. It is equivalent to double brackets, but you don't need quotes
 
 ```{r}
-brendan$year
+jane_doe$height
 ```
 ]
 ]
@@ -815,12 +744,12 @@ Just like vectors, we can change or add elements to our list using indexing.
 --
 ***
 
-Let's save the dog years transformation of the `year` element as `dog_years`
+Let's save the inches transformation of the `height` element as `height_in`.
 
 
 ```{r}
-brendan$dog_years <- brendan$year*7
-brendan
+jane_doe$height_in <- jane_doe$height * 12
+jane_doe
 ```
 
 
@@ -832,7 +761,7 @@ class: inverse
 countdown(minutes = 3)
 ```
 
-1. Create a list like mine that is made up of `year`, `name`, `enrollment`, `fave_data`, but corresponds to you (year in undergrad, year in grad school, years since PhD, etc.). Make sure you enter two types of favorite data (bc who could choose?!). 
+1. Create a list like `jane_doe` that is made up of `name`, `height`, `right_handed`, and `ice_cream`, but corresponds to information about you. 
 
 1. Index your list to print only your name.
 
@@ -844,11 +773,11 @@ class: solution
 .panel[.panel-name[Q1]
 ```{r}
 # Q1. (Answers will vary)
-brendan <- list(year = 6L,
-             name = "Brendan Cullen",
-             enrollment = TRUE, 
-             fave_data = c("strings", "numbers"))
-brendan
+jane_doe <- list(name = "Jane Doe",
+                height = 5.5,
+                right_handed = TRUE,
+                ice_cream = c("mint chip", "pistachio"))
+jane_doe
 ```
 ]
 
@@ -856,9 +785,9 @@ brendan
 
 ```{r}
 # Q2. 
-brendan$name
+jane_doe$name
 
-brendan[["name"]]
+jane_doe[["name"]]
 ```
 
 ]
@@ -869,15 +798,15 @@ brendan[["name"]]
 
 ### Indexing objects within lists
 
-As we saw with the object `fave_data` stored in the list `brendan`, objects within lists can have different dimensions and length. 
+As we saw with the object `ice_cream` stored in the list `jane_doe`, objects within lists can have different dimensions and length. 
 
 --
 
-What if we wanted just one element of an object in a list, such as just the second element of `fave_data`? 
+What if we wanted just one element of an object in a list, such as just the second element of `ice_cream`? 
 
 --
 
-We can use indexing on the `fave_data` vector stored within the `brendan` list by chaining indexes.
+We can use indexing on the `ice_cream` vector stored within the `jane_doe` list by chaining indexes.
 
 --
 
@@ -887,7 +816,7 @@ We can use indexing on the `fave_data` vector stored within the `brendan` list b
 We could do that with numerical indexing...
 
 ```{r}
-brendan[[4]][2]
+jane_doe[[4]][2]
 ```
 ]
 
@@ -895,7 +824,7 @@ brendan[[4]][2]
 ...or with name indexing
 
 ```{r}
-brendan[["fave_data"]][2]
+jane_doe[["ice_cream"]][2]
 ```
 ]
 
@@ -904,7 +833,7 @@ brendan[["fave_data"]][2]
 ...or with dollar sign (`$`) indexing:
 
 ```{r}
-brendan$fave_data[2]
+jane_doe$ice_cream[2]
 ```
 ]
 ]
@@ -934,15 +863,13 @@ df_1
 ---
 # Indexing data frames
 
-```{r echo=FALSE}
+```{r}
 df_1
 ```
 
 ***
 
-Indexing data frames is similar to how we index vectors, except we have two dimensions, which we use like so:
-
-.center[`[row, column]`]
+Indexing data frames is similar to how we index vectors, except we have two dimensions, which we use like so: `[row, column]`
 
 --
 ***
@@ -981,7 +908,7 @@ df_1[, "c2"]
 ---
 # Indexing data frames
 
-```{r echo=FALSE}
+```{r}
 df_1
 ```
 
@@ -1006,10 +933,8 @@ df_1$c1
 
 We can also index a column using vector indexing, since a single column is just a 1-dimensional vector. 
 
-Let's get the first value in column 1.
-
 ```{r}
-df_1$c1[1]
+df_1$c1[1] # get the first value in column 1
 ```
 ]
 ]
@@ -1018,7 +943,7 @@ df_1$c1[1]
 # Modifying data frames 
 
 
-```{r echo=FALSE}
+```{r}
 df_1
 ```
 
@@ -1054,37 +979,17 @@ df_1
 ]
 
 ---
-# Data types & Coercion
+# Inspecting data frames
 
-```{r echo=FALSE}
+```{r}
 df_1
 ```
 
 ***
 
-How can we tell what type of data each column in our data frame stores? 
-
---
-
-We can use the `str()` function to get the structure of the data.
+We can use the `str()` function to get the structure of the data. This tells us the type of each column.
 
 ```{r}
-str(df_1)
-```
-
----
-# Data types & Coercion
-
-We can also coerce individual columns into other types. 
-
---
-***
-
-For example, we could convert column `c1` into an integer (from a numeric/double)
-
-```{r}
-df_1$c1 <- as.integer(df_1$c1)
-
 str(df_1)
 ```
 
@@ -1097,15 +1002,15 @@ class: inverse
 countdown(minutes = 3)
 ```
 
-1. Make a data frame, called `df_2`, that has 3 columns as shown below. After you create it, check the structure.
+1. Make a data frame, called `df_2`, that has 3 columns as shown below. After you create it, check the structure with `str()`.
 
-    `c1` = c(1, 2, 3) <br>
-    `c2` = c(2, 4, 6) <br>
-    `c3` = c("a", "b", "c")
+```{r echo = FALSE}
+data.frame(c1 = c(1, 2, 3),
+           c2 = c(2, 4, 6),
+           c3 = c("a", "b", "c"))
+```
 
-1. Add a fourth column, `c4`, which is the first and second columns multiplied together.
-
-1. Try to add the first and second rows together. What happens? Why?
+2. Add a fourth column, `c4`, which is the first and second columns multiplied together.
 
 ---
 class: solution
@@ -1132,14 +1037,6 @@ str(df_2)
 df_2$c4 <- df_2$c1 * df_2$c2
 
 df_2
-```
-]
-
-.panel[.panel-name[Q3]
-
-```{r}
-# Q3.
-df_2[1,] + df_2[2, ]
 ```
 ]
 ]

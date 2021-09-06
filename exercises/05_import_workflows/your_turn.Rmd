@@ -6,7 +6,7 @@ output: html_document
 
 # Your Turn 1
 
-1. Load the `rio` and `here` packages.
+1. Load the rio and here packages.
 
 ```{r}
 # Q1.
@@ -36,7 +36,7 @@ ps_data <- import(here("___"))
 
 
 
-4. Remember that `rio` is flexible with file types -- `rio::import()` will call the right function under the hood to read in the file based on the file extension. Use `rio` to import `pragmatic_scales_data.sav` (an SPSS file type) and save it to a new object named `ps_data_2`.
+4. Remember that rio is flexible with file types -- `rio::import()` will call the right function under the hood to read in the file based on the file extension. Use rio to import `pragmatic_scales_data.sav` (an SPSS file type) and save it to a new object named `ps_data_2`.
 
 
 ```{r}
@@ -97,7 +97,7 @@ another_df_2 <- ___
 ```{r}
 #Q2. 
 
-# Don't forget to load the `tidyverse` package! 
+# Don't forget to load the tidyverse package! 
 
 ```
 

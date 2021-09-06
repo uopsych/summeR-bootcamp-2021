@@ -17,19 +17,19 @@ subtitle = ""
 [[feature]]
   icon = "terminal"
   icon_pack = "fas"
-  name = "**Getting started with R** <br><br> <i class='fa fa-calendar'></i> Monday, 9/21 <br> 9 AM - 1 PM PST "
+  name = "**Getting started with R** <br><br> <i class='fa fa-calendar'></i> Wednesday, 9/22 <br> 9 AM - 12 PM PST "
   description = "<br> Basics of R & RStudio <br> Data Types & Structures <br> Functions & Debugging"
   
 [[feature]]
   icon = "chart-bar"
   icon_pack = "fas"
-  name = "**Importing & visualizing data** <br><br> <i class='fa fa-calendar'></i> Wednesday, 9/23 <br> 9 AM - 12 PM PST"
-  description = "<br> Introduction to the tidyverse <br> Importing data & Project-oriented workflows <br> Data visualization with `ggplot2`"
+  name = "**Importing & visualizing data** <br><br> <i class='fa fa-calendar'></i> Thursday, 9/23 <br> 9 AM - 1 PM PST"
+  description = "<br> Introduction to the tidyverse <br> Importing data & Project-oriented workflows <br> Data visualization with ggplot2"
   
 [[feature]]
   icon = "table"
   icon_pack = "fas"
-  name = "**Data wrangling & tidying** <br><br> <i class='fa fa-calendar'></i> Friday, 9/25 <br> 9 AM - 1 PM PST"
-  description = "<br> Data wrangling with `dplyr` <br> Data tidying with `tidyr` <br> Reproducible reporting with R Markdown"
+  name = "**Data wrangling & tidying** <br><br> <i class='fa fa-calendar'></i> Friday, 9/24 <br> 9 AM - 1 PM PST"
+  description = "<br> Data wrangling with dplyr <br> Data tidying with tidyr <br> Reproducible reporting with R Markdown"
 
 +++

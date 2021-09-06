@@ -46,7 +46,7 @@ style_mono_accent(base_color = "#23395b",
 
 class: title-slide, center, middle
 
-# Data Reshaping with `tidyr`
+# Data Reshaping with tidyr
 
 
 ---
@@ -93,7 +93,7 @@ This means you will need to reshape your data in order to tidy it.
 --
 ***
 
-This is where the `tidyr` package comes in. It contains two crucial functions that you can use to reshape your data...
+This is where the tidyr package comes in. It contains two crucial functions that you can use to reshape your data...
 
 --
 
@@ -126,7 +126,7 @@ knitr::include_graphics("images/tidyr-longer-wider-modified.gif")
 ---
 # Example data 
 
-Our example data is built into to the `tidyr` package. 
+Our example data is built into to the tidyr package. 
 
 It represents the number of TB cases documented by the World Health Organization in Afghanistan, Brazil, and China between 1999 and 2000
 

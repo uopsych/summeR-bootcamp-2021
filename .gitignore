@@ -5,3 +5,5 @@
 .DS_Store
 public/
 static/labs/data/artworks.csv
+Thumbs.db
+resources/

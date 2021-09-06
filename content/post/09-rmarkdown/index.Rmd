@@ -7,8 +7,8 @@ summary: " "
 authors: []
 tags: []
 categories: []
-date:
-lastmod: 2020-09-15T12:25:10-07:00
+date: "`r Sys.Date()`"
+weight: 10
 featured: false
 draft: false
 
@@ -59,15 +59,13 @@ xaringanExtra::embed_xaringan(
 ### Further Reading
 
 :::book
-1. [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+1. [Overview of R Markdown](https://rmarkdown.rstudio.com/lesson-1.html) from RStudio
 
-2. [R Markdown for Scientists](https://rmd4sci.njtierney.com/)
+2. [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 
-3. Workshops on [introductory](https://rmd4medicine.netlify.app/) and [advanced](https://arm.rbind.io/) R Markdown by Alison Hill Yihuie Xie (two R Markdown legends `r emo::ji("star-struck")`)
+3. [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
 
-4. [Tips for working with images and figures](http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/) in R Markdown by Zev Ross
+4. [R Markdown for Scientists](https://rmd4sci.njtierney.com/)
 
-5. [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
-
-6. [Overview of R Markdown](https://rmarkdown.rstudio.com/lesson-1.html) from RStudio
+5. Workshops on [introductory](https://rmd4medicine.netlify.app/) and [advanced](https://arm.rbind.io/) R Markdown
 :::

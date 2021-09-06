@@ -6,17 +6,17 @@ light = true
 
 
 # Primary
-primary = "#3D4856"
+primary = "#23395b"
 
-# Links
-link = "#A36C00"
-link_hover = "#243445"
+## Links
+link = "#BA8800"
+link_hover = "#23395b"
 
 # Menu
-menu_primary = "#E6F4F1"
-menu_text = "#243445"
-menu_text_active = "#AA9880"
-menu_title = "#243445"
+menu_primary = "#23395b"
+menu_text = "#FEFCF4"
+menu_text_active = "#BA8800"
+menu_title = "#FEFCF4"
 
 # Backgrounds
 background = "#fff"
