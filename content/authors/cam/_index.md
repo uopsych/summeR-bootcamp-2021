@@ -4,9 +4,6 @@ authors:
 bio:
 email: ""
 name: Cameron Kay
-organizations:
-- name: Groups and War Lab
-  url: https://groupsandwar.uoregon.edu/
 role: Graduate Student
 social:
 - icon: envelope
