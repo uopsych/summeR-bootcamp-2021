@@ -10,7 +10,7 @@ role: "Department of Psychology"
 social:
 - icon: r-project
   icon_pack: fab
-  link: https://rstudio.cloud/spaces/94452/join?access_code=E3V8Vd%2FB%2F5edCEBphs4kuttNb6epLuRbqzab2L8J
+  link: https://rstudio.cloud/spaces/169455/join?access_code=yWOd%2Fuf8lAnvG%2Bz1KkK38lol4iUfCMrw60kxkTq2
 - icon: slack
   icon_pack: fab
   link: https://uodatascience.slack.com/

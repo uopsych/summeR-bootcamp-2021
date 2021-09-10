@@ -116,7 +116,7 @@ class: split-three
 
 .column[.content[.center[
 <br><br><br><br><br>
-# [`r fontawesome::fa("r-project", height = "120px")`](https://bit.ly/3caJRCN)
+# [`r fontawesome::fa("r-project", height = "120px")`](https://rstudio.cloud/spaces/169455/join?access_code=yWOd%2Fuf8lAnvG%2Bz1KkK38lol4iUfCMrw60kxkTq2)
 
 ### RStudio Cloud
 ]]]
