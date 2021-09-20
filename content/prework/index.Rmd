@@ -47,6 +47,8 @@ If possible, please try to complete this checklist *before* the first bootcamp s
 
 4) Review the [Code of Conduct](/#code_of_conduct).
 
+5) (*Optional*) Download [Google Chrome](https://www.google.com/chrome/) if you don't have it already. The materials on this website are best viewed with Chrome. We've found that using other browsers (Firefox, Safari, etc.) can lead to some technical difficulties.
+
 Looking forward to seeing you all soon. Hopefully we'll have you loving R in no time!
 
 -Brendan
