@@ -41,13 +41,13 @@ If possible, please try to complete this checklist *before* the first bootcamp s
 
 1) Make sure you have a [Zoom account](https://service.uoregon.edu/TDClient/2030/Portal/KB/ArticleDet?ID=101392) set up through University of Oregon. We will use the same Zoom link for each day of the bootcamp, and you will receive the link via email and slack.
 
-2) Join the [slack workspace](https://uodatascience.slack.com/). This how we will primarily be communicating with each other, and it is the best place to ask questions outside of bootcamp hours. We'll be using the channel `#bootcamp2021`. You should have received an email invitation to join the `SlackRs` workspace (check your Junk/Spam inbox) -- if you haven't received an invitation, send Brendan an email at [bcullen@uoregon.edu](mailto:bcullen@uoregon.edu). 
+2) Join the [Slack workspace](https://uodatascience.slack.com/). This how we will primarily be communicating with each other, and it is the best place to ask questions outside of bootcamp hours. We'll be using the channel `#bootcamp2021`. You should have received an email invitation to join the `SlackRs` workspace (check your Junk/Spam inbox) -- if you haven't received an invitation, send Brendan an email at [bcullen@uoregon.edu](mailto:bcullen@uoregon.edu). When you join, please introduce yourself in and say hello in the `#bootcamp2021` channel!
 
 3) Join the [RStudio Cloud workspace](https://rstudio.cloud/spaces/169455/join?access_code=yWOd%2Fuf8lAnvG%2Bz1KkK38lol4iUfCMrw60kxkTq2). When you click this link you will be prompted to create a free RStudio Cloud account. Follow the instructions and click "Join space" when prompted. You should find yourself inside a workspace called **UO Psych Bootcamp 2021**. Please don't open any of the materials just yet -- we'll go through these together during the bootcamp. 
 
 4) Review the [Code of Conduct](/#code_of_conduct).
 
-5) (*Optional*) Download [Google Chrome](https://www.google.com/chrome/) if you don't have it already. The materials on this website are best viewed with Chrome. We've found that using other browsers (Firefox, Safari, etc.) can lead to some technical difficulties.
+5) *Optional* - Download [Google Chrome](https://www.google.com/chrome/) if you don't have it already. The materials on this website are best viewed with Chrome. We've found that using other browsers (Firefox, Safari, etc.) can lead to some technical difficulties.
 
 Looking forward to seeing you all soon. Hopefully we'll have you loving R in no time!
 
