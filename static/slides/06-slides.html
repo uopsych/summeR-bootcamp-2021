@@ -70,7 +70,7 @@ This data comes from the `palmerpenugins` package, which you can download from C
 
 --
 
-And remember, to load the package, use `library(penguins)`, which will give you access to the built-in dataset, called `penguins`
+And remember, to load the package, use `library(palmerpenguins)`, which will give you access to the built-in dataset, called `penguins`
 
 --
 
@@ -116,7 +116,7 @@ When creating a plot in ggplot2, the first thing you have to do is call the `ggp
 
 --
 
-It takes data as its first argument. Let's start there...
+It takes `data` as its first argument. Let's start there...
 
 --
 
@@ -147,38 +147,10 @@ All we got was a blank square!
 
 --
 
-To understand why, let's back up to the philosophy of `ggplot`...
+To understand why, let's take a look at the philosophy of ggplot2...
 
----
-background-image: url(images/hex/ggplot2.png)
-background-position: 90% 5%
-background-size: 10%
-
-# ggplot2
-
-### What is a statistical graphic? 
-
---
-
-According to  [Hadley Wickham](http://www.tandfonline.com/doi/abs/10.1198/jcgs.2009.07098), we can think of statistical graphics as:
-
---
-* **Mappings** from data to aesthetic attributes (color, shape, size) 
-* Consisting of **geometric objects** (points, lines, bars)
-* On a particular **coordinate system** (or scale)
-* Sometimes derived from a statistical **transformation**
-
---
-***
-
-In `ggplot`, that combination of things forms a *layer*. The `ggplot` terminology is:
-
---
-
-* **aes** - aesthetic mappings
-* **geom** - geometric objects
-* **scale** - scales
-* **stat** - statistical transformations
+&lt;iframe src="https://player.vimeo.com/video/223812632?h=05e2af1b10&amp;color=428bca" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/223812632"&gt;01-Data-Visualization&lt;/a&gt; from &lt;a href="https://vimeo.com/rstudioinc"&gt;RStudio, Inc.&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
 ---
 background-image: url(images/hex/ggplot2.png)
@@ -187,36 +159,17 @@ background-size: 10%
 
 # ggplot
 
-Putting all that together, the flow of information in `ggplot` is...
+To summarize, there are 3 basic steps to making any plot.
+
+&lt;img src="images/ggplot_summary.png" width="40%" /&gt;
 
 --
-
-1. `data` is attached to the `ggplot()` call...
-
---
-
-2. mapped by `aes()`...
-
---
-
-3. transformed by `stat` before being passed to a `geom()`...
-
---
-
-4. which is placed, sized, and colored according to its relevant `scale`...
-
---
-
-5. then ta-da! rendered plot.
-
---
-***
 
 We already did step 1 above, by providing our `penguins` dataset to `ggplot()`. 
 
 --
 
-Now let's move onto aesthetic mapping.
+Now let's move onto geoms and aesthetic mappings...
 
 ---
 class: inverse, center, middle
@@ -274,7 +227,7 @@ ggplot(data = penguins)
 --
 ***
 
-We can re-write this code by "piping" the first argument, `data` to the function, `ggplot()` 
+We can re-write this code by "piping" the first argument, `data`, to the `ggplot()` function
 
 
 ```r
@@ -300,7 +253,7 @@ Verbally, we might describe the code we just wrote as "Start with the `penguins`
 class: inverse
 # Your Turn 1
 
-<div class="countdown" id="timer_61185e76" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_614a7240" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -353,6 +306,8 @@ penguins$flipper_length_mm %&gt;%
 class: inverse, center, middle
 
 # Now back to ggplot...
+
+&lt;img src="images/ggplot_summary.png" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 background-image: url(images/hex/ggplot2.png)
@@ -615,7 +570,7 @@ This is not what we want! `ggplot` is treating the value "red" as if it were par
 class: inverse
 # Your Turn 2
 
-<div class="countdown" id="timer_61185faf" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_614a6f98" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
 
@@ -842,7 +797,7 @@ You want to put anything in the global mapping that you want *every layer to inh
 
 In the code above, I defined the `x` and `y` aesthetics globally, because I want those the same in every `geom`.
 
-However, I *don't* define the`color` aesthetic globally, because `color` is geom-specific in this case.
+However, I *don't* define the `color` aesthetic globally, because `color` is geom-specific in this case.
 ]
 ]
 
@@ -908,7 +863,7 @@ penguins %&gt;%
 class: inverse
 # Your Turn 3
 
-<div class="countdown" id="timer_61185e8d" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_614a7074" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -970,7 +925,7 @@ ps_data %&gt;%
 
 .pull-right[
 
-![](06-slides_files/figure-html/unnamed-chunk-16-1.png)&lt;!-- --&gt;
+![](06-slides_files/figure-html/unnamed-chunk-18-1.png)&lt;!-- --&gt;
 ]
 ]
 ]
@@ -1064,7 +1019,7 @@ Click on the "full screen" icon in the bottom right and use the navigation arrow
 class: inverse, center, middle
 # Q &amp; A
 
-<div class="countdown" id="timer_61185ec0" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_614a7163" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 

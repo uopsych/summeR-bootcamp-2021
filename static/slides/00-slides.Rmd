@@ -279,6 +279,7 @@ knitr::include_graphics("images/engine_dashboard.png")
   
   + web applications
   
+  + entire APA-formatted manuscripts
 --
 
 + In R, it is never *if* but *how*...
@@ -316,7 +317,7 @@ knitr::include_graphics("images/engine_dashboard.png")
 
 --
 
-+ Once you get used to it and start using R, it saves you time in the long run
++ It saves you time in the long run
 
 --
 
@@ -330,11 +331,10 @@ knitr::include_graphics("images/engine_dashboard.png")
 
 + It runs faster and is less bloated than GUI-based statistical software (e.g., SPSS)
 
---
+---
+# Why Use R?
 
 ## It's fun `r emo::ji("partying_face")`
-
-No, seriously!
 
 ---
 class: inverse, center, middle

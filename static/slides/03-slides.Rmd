@@ -91,6 +91,11 @@ seq()
 
 Let's take a look at a new function, `mean()`... `r icon::fa("cloud")`
 
+```{r eval=FALSE}
+?mean
+```
+
+
 ---
 # Functions
 
@@ -319,7 +324,7 @@ So far, we've been working with functions that are already installed and loaded 
 
 --
 
-However, many of the functions we want access to to use are not part of the basic R install. They come in **packages** that other R users create and share.
+However, many of the functions we want to use are not part of the basic R install. They come in **packages** that other R users create and share.
 
 --
 
@@ -366,14 +371,14 @@ Installing a package puts a copy of it into our personal library that R has acce
 
 However, whenever we want to to use a package, we need to load the package in our working session in RStudio. 
 
-We load packages with the `library()` function, we do this once *per session*.
+We load packages with the `library()` function -- we do this once *per session*.
 
 --
 ***
 
 Loading a package basically makes the contents of that package searchable by R. 
 
-In other words, after loading a package, R is able to find the functions included in that packages. 
+In other words, after loading a package, R is able to find the functions included in that package. 
 
 You can see what functions are available in your workspace by running the `search()` function
 
@@ -445,7 +450,7 @@ knitr::include_graphics("images/package_yt_5.png")
 ---
 # Packages
 
-Another package we're going to use a lot going forward is tidyverse. 
+Another package we're going to use a lot going forward is **tidyverse.** 
 
 tidyverse is actually a "meta-package", meaning it contains many individual packages inside of it that are all bundled together. 
 
@@ -512,7 +517,7 @@ class: solution
 
 .panel[.panel-name[Q2]
 
-```{r}
+```{r eval=FALSE}
 ?dplyr::filter
 ```
 ]
