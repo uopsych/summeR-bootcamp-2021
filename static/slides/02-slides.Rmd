@@ -51,24 +51,11 @@ So far, we’ve just been working with numeric data, but there are several other
 
 Type | Definition | Example
 -----|------------|--------
-Integer | whole numbers from -Inf to +Inf | 1L, -2L
-Numeric / Double | numbers, fractions & decimals from -Inf to +Inf | 7, 0.2, -5/2, `Inf`, `-Inf`
-Character / String | quoted strings of letters, numbers, and allowed symbols| "1", "one", "o_n_e", "o-n-e", "o.n.e"
-Logical / Boolean | logical constants of True or False | `TRUE`, `FALSE`, `T`, `F`
-factor | ordered, labelled variable | variable for year in college labelled "Freshman", "Sophomore", etc.
-
----
-# Types of data 
-
-There are a few special cases worth knowing about too
-
-Type | Definition |Example
------|------------|-------
-NA   | Missing value; technically represented as different types but displayed as `NA` | `NA`, `NA_character_`, `NA_integer_`
-NaN  | Not a Number | 0/0
-+Inf | Positive infinity | `Inf`
--Inf | Negative infinity | `-Inf`
-NULL | The `NULL` object; an object that exists but is completely empty | `NULL`
+Integer | whole numbers from -Inf to +Inf | `1L`, `-2L`
+Double | numbers, fractions & decimals | `-7`, `0.2`, `-5/2`
+Character | quoted strings of letters, numbers, and allowed symbols | `"1"`, `"one"`, `"o-n-e"`, `"o.n.e"`
+Logical | logical constants of true or false | `TRUE`, `FALSE`
+Factor | ordered, labelled variable | variable for year in college labelled `"Freshman"`, `"Sophomore"`, etc.
 
 ---
 # Types of data 
@@ -97,13 +84,25 @@ typeof("one")
 ```
 
 ---
+# Types of data 
+
+There are a few special values worth knowing about too
+
+Value | Definition
+-----|------------
+`NA`   | Missing value ("not available")
+`NaN ` | Not a Number (e.g. 0/0)
+`Inf` | Positive infinity
+`-Inf` | Negative infinity
+`NULL` | An object that exists but is completely empty
+---
 class: inverse, center, middle
 # Data structures 
 
 ---
 # Vectors 
 
-Often, we’re not working with individual values, but with multiple related values -- or a **vector** of values.
+Often, we’re not working with individual values, but with a group of multiple related values -- or a **vector** of values.
 
 --
 ***
@@ -617,7 +616,7 @@ Notice that `[[1]]`, `[[2]]`, and `[[3]]`, the element indices, have been replac
 ---
 # Creating Lists
 
-You can see also see the names of a list by running `names()` on it
+You can also see the names of a list by running `names()` on it
 
 --
 

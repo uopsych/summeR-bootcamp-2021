@@ -725,7 +725,7 @@ background-size: 10%
 
 # `summarize()`
 
-`summarize()` reduces your raw data frame into to a smaller summary data frame that only contains the variables resulting from the **summary functions** that you specify within `summarize()`
+`summarize()` reduces your raw data frame into a smaller summary data frame that only contains the variables resulting from the **summary functions** that you specify within `summarize()`
 
 ```{r echo=FALSE, out.width="40%"}
 knitr::include_graphics("images/dplyr/summarize.png")

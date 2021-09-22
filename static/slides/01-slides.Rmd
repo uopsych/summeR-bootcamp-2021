@@ -138,7 +138,7 @@ To assign a value to an object, use the **assignment operator**. It looks like a
 --
 ***
 
-Let's use `<-` to create an object called x, that is assigned the number 8. 
+Let's use `<-` to create an object called `x` that is assigned the number 8. 
 
 ```{r}
 x <- 8 

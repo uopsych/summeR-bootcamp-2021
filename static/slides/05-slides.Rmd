@@ -42,7 +42,7 @@ class: title-slide, center, middle
 
 # Importing data
 
-### Importing data in R generally has 2 commonly challenging aspects...
+### Importing data in R has 2 challenging aspects...
 
 --
 
@@ -300,12 +300,24 @@ The file **pragmatic_scales_data.csv** is saved in the **data** folder, so we ne
 # Q3.
 ps_data <- import(here("data/pragmatic_scales_data.csv"))
 ```
+
+
+```{r eval=FALSE}
+# Alternative solution -- specify each subfolder separately
+ps_data <- import(here("data", "pragmatic_scales_data.csv"))
+```
 ]
 
 .panel[.panel-name[Q4]
 ```{r eval=FALSE}
 # Q4.
 ps_data_2 <- import(here("data/pragmatic_scales_data.sav"))
+```
+
+
+```{r eval=FALSE}
+# Alternative solution -- specify each subfolder separately
+ps_data_2 <- import(here("data", "pragmatic_scales_data.sav"))
 ```
 ]
 ]
@@ -338,7 +350,7 @@ export(x, file)
 For example, let's say I want to export `ps_data` as an `.xlsx` file and put it into the `data/` subdirectory.
 
 ```{r eval=FALSE}
-export(ps_data, here::here("data/ps_data.xlsx"))
+export(ps_data, here::here("data", "ps_data.xlsx"))
 ```
 
 ---
@@ -366,7 +378,7 @@ class: solution
 
 ```{r eval=FALSE}
 # Q1.
-another_df <- import(here("data/more_data/another_data_set.csv"))
+another_df <- import(here("data", "more_data", "another_data_set.csv"))
 ```
 
 ]
@@ -375,7 +387,7 @@ another_df <- import(here("data/more_data/another_data_set.csv"))
 
 ```{r eval=FALSE}
 # Q2.
-export(another_df, here("data/another_data_set.xlsx"))
+export(another_df, here("data", "another_data_set.xlsx"))
 ```
 ]
 
@@ -384,7 +396,7 @@ export(another_df, here("data/another_data_set.xlsx"))
 
 ```{r eval=FALSE}
 # Q3.
-export(another_df, here("data/another_data_set.sav"))
+export(another_df, here("data", "another_data_set.sav"))
 ```
 
 ]
@@ -394,7 +406,7 @@ export(another_df, here("data/another_data_set.sav"))
 
 ```{r eval=FALSE}
 # Q4.
-another_df_2 <- import(here("data/another_data_set.sav"))
+another_df_2 <- import(here("data", "another_data_set.sav"))
 ```
 ]
 ]
