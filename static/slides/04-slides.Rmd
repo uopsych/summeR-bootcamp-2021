@@ -456,7 +456,7 @@ There are three interrelated rules which make a dataset tidy:
 
 
 ```{r echo=FALSE}
-knitr::include_graphics("https://github.com/rstudio/cheatsheets/blob/master/pngs/thumbnails/tidyr-thumbs.png")
+knitr::include_graphics("https://github.com/rstudio/cheatsheets/raw/master/pngs/thumbnails/tidyr-thumbs.png")
 ```
 
 `r icon::fa("file-pdf")` [Download PDF](https://github.com/rstudio/cheatsheets/raw/master/tidyr.pdf)
